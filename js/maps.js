@@ -8,7 +8,7 @@ function initMap() {
     });
 
     const beachFlagImg = document.createElement('img');
-    beachFlagImg.src = '/html_inoue_03/img/logo.png';
+    beachFlagImg.src = '/cheese-academy/img/logo.png';
 
     // マーカーの追加
     var marker = new google.maps.marker.AdvancedMarkerElement({
