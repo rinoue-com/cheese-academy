@@ -1,0 +1,361 @@
+/* ここから下に記載していく */
+.main {
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.05em;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 124px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: center;
+
+    padding: 0 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 境界線色 */
+    border: 1px solid #cacaca;
+
+    /* ヘッダー固定化 */
+    position: fixed;
+    top: 0; 
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.header nav {
+    display: flex;
+    gap: 50px;
+    margin: 50px;
+}
+.header nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 21px;
+}
+
+.ma-b60 {
+    margin-bottom: 60px;
+}
+
+.top-image {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    /* background-image: url(../img/top-image.jpg); */
+}
+.top-image img {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 30px; */
+}
+.top-image .top-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.top-title p {
+    line-height: 1;
+}
+
+.title1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.title2 {
+    font-size: 32px;
+    margin: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px;
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.course + h2 {
+    font-size: 18px;
+    margin: 40px;
+}
+
+.about {
+    text-align: center;
+}
+
+.course {
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    line-height: 2;
+    margin: 40 0px;
+    font-size: 16px;
+}
+
+.yellow {
+    color: #ffd61a;
+}
+
+.white {
+    color: white;
+}
+
+
+.course-div {
+    display: flex;
+    position: relative;
+    align-items: center;    /* 垂直方向中央揃え */
+    width: auto;
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.course-left {
+    width: 50%;
+    justify-content: right;
+    display: flex;
+}
+
+.course-right {
+    width: 50%;
+    justify-content: left;
+    display: flex;
+}
+
+.course-img {
+    width: 100%;
+    height: auto;
+}
+
+.course-text-right {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.course-text-left {
+    text-align: left;
+    padding-right: 50px;
+}
+
+.course-div h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.course-div span {
+    font-size: 16px;
+    line-height: 2;
+    width: 480px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+}
+
+.news-content {
+    width: 300px;
+    margin: 0 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.news-date {
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.news-content p {
+    font-size: 14px;
+}
+.news-content a {
+    text-decoration: none;
+    color: #000000;
+}
+.news-content:hover {
+    text-decoration: underline;
+    /* 枠線 */
+    border: 0.5px solid #000000;
+    /* 影 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.access {
+    background-color: #fafafa;
+    padding-bottom: 30px;
+}
+
+.access h1 {
+    padding-top: 60px;
+}
+
+.access-container {
+    display: flex;
+    justify-content: center;
+}
+
+.access p  {
+    padding-bottom: 30px;
+}
+
+.label {
+    margin-right: 50px;
+    text-align: left;
+}
+.content {
+    text-align: left;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 60px;
+}
+
+.contact p{
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.more {
+    margin-top: 30px;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #ffd61a;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 30px;
+}
+
+.lp-content {
+    margin-bottom: 30px;
+}
+
+.button:hover {
+    background-color: #cfab0a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影をつける */
+}
+
+/* フォーム */
+.contact form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #bfbfbf;
+    /* border-bottom: 1px solid #bfbfbf; */
+}
+
+.form-group + .bottom {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.form-group > label {
+    display: block;
+    font-size: 14px;
+    width: 240px;
+    padding-left: 16px;
+    padding-right: 64px;
+    box-sizing: border-box;
+}
+
+.form-input {
+    width: 400px;
+    padding: 8px;
+    border-left: 1px solid #bfbfbf;
+    box-sizing: border-box;
+}
+
+.form-control {
+    /* padding: 8px; */
+    border: 1px solid #bfbfbf;
+    box-sizing: border-box;
+    width: 328px;
+}
+
+.form-control[type="text"],
+.form-control[type="email"] {
+    height: 36px;
+}
+
+.form-group select {
+    height: 36px;
+}
+
+.form-group textarea {
+    height: 120px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    color: #333333;
+    margin: 12px 0;
+    width: 400px;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+/* チェックボックス03 */
+
+
+
+.footer {
+    margin-top: 140px;
+    background-color: #707070;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+    /* フッターを横いっぱいにする */
+    
+}
